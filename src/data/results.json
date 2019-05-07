@@ -1,0 +1,58 @@
+[
+  {
+    "id": 1,
+    "type": "Adventure",
+    "location": "Bangkok",
+    "resultType": "Recommended",
+    "latitude": 13.11,
+    "longitude": 100.17,
+    "title": "Rock Climbing",
+    "subtitle": "PP Rocks",
+    "description": "Best rock climbing place in Bangkok",
+    "importantNotes": "10% off",
+    "link": "http://www.bangkok.com/",
+    "image": "http://www.bangkok.com/"
+  },
+  {
+    "id": 2,
+    "type": "Romantic",
+    "location": "Bangkok",
+    "resultType": "Recommended",
+    "latitude": 13.10,
+    "longitude": 100.15,
+    "title": "Dinner",
+    "subtitle": "Bennies Hotel",
+    "description": "Best food ever",
+    "importantNotes": "10% off",
+    "link": "http://www.bangkok.com/",
+    "image": "http://www.bangkok.com/"
+  },
+  {
+    "id": 3,
+    "type": "Adventure",
+    "location": "Chiang Mai",
+    "resultType": "Recommended",
+    "latitude": 13.11,
+    "longitude": 100.17,
+    "title": "Water Rafting",
+    "subtitle": "Jims House Rafts",
+    "description": "Best water rafting place in Chiang Mai",
+    "importantNotes": "10% off",
+    "link": "http://www.bangkok.com/",
+    "image": "http://www.bangkok.com/"
+  },
+  {
+    "id": 4,
+    "type": "Relaxing",
+    "location": "Bangkok",
+    "resultType": "Recommended",
+    "latitude": 13.12,
+    "longitude": 100.16,
+    "title": "Spas",
+    "subtitle": "Spas R Us",
+    "description": "Best rock climbing place in Bangkok",
+    "importantNotes": "10% off",
+    "link": "http://www.bangkok.com/",
+    "image": "http://www.bangkok.com/"
+  }
+]

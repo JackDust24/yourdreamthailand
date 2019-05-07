@@ -1,0 +1,132 @@
+import trialImage from '../assets/bangkok.jpg';
+
+const RESULT_TYPES = [
+  {
+    id: 1,
+    type: 'adventure',
+    location: 'Bangkok',
+    resultType: 'Recommended',
+    latitude: 13.11,
+    longitude: 100.17,
+    title: 'Rock Climbing',
+    subtitle: 'PP Rocks',
+    description: 'Best rock climbing place in Bangkok',
+    importantNotes: '10% off',
+    link: 'http://www.bangkok.com/',
+    image: trialImage
+  },
+  {
+    id: 2,
+    type: 'romantic',
+    location: 'Bangkok',
+    resultType: 'Recommended',
+    latitude: 13.10,
+    longitude: 100.15,
+    title: 'Dinner',
+    subtitle: 'Bennies Hotel',
+    description: 'Best food ever',
+    importantNotes: '10% off',
+    link: 'http://www.bangkok.com/',
+    image: trialImage
+  },
+  {
+    id: 3,
+    type: 'adventure',
+    location: 'Chiang Mai',
+    resultType: 'Recommended',
+    latitude: 13.11,
+    longitude: 100.17,
+    title: 'Water Rafting',
+    subtitle: 'Jims House Rafts',
+    description: 'Best water rafting place in Chiang Mai',
+    importantNotes: '10% off',
+    link: 'http://www.bangkok.com/',
+    image: trialImage
+  },
+  {
+    id: 4,
+    type: 'relaxing',
+    location: 'Bangkok',
+    resultType: 'Recommended',
+    latitude: 13.12,
+    longitude: 100.16,
+    title: 'Spas',
+    subtitle: 'Spas R Us',
+    description: 'Best rock climbing place in Bangkok',
+    importantNotes: '10% off',
+    link: 'http://www.bangkok.com/',
+    image: trialImage
+  },
+  {
+    id: 5,
+    type: 'adventure',
+    location: 'Kanchanaburi',
+    resultType: 'Recommended',
+    latitude: 13.10,
+    longitude: 100.19,
+    title: 'Jumping Rocks',
+    subtitle: 'JJ Rocks',
+    description: 'Best rock climbing place in Kanchanaburi',
+    importantNotes: '10% off',
+    link: 'http://www.bangkok.com/',
+    image: trialImage
+  },
+  {
+    id: 6,
+    type: 'romantic',
+    location: 'Chiang Mai',
+    resultType: 'Recommended',
+    latitude: 13.20,
+    longitude: 100.25,
+    title: 'Eat Fish',
+    subtitle: 'Love U R Us Hotel',
+    description: 'Best food ever',
+    importantNotes: '10% off',
+    link: 'http://www.bangkok.com/',
+    image: trialImage
+  },
+  {
+    id: 7,
+    type: 'relaxing',
+    location: 'Chiang Mai',
+    resultType: 'Recommended',
+    latitude: 13.91,
+    longitude: 100.97,
+    title: 'Scenery',
+    subtitle: 'Mountain Coffee house',
+    description: 'Best views in Chiang Mai',
+    importantNotes: '10% off',
+    link: 'http://www.bangkok.com/',
+    image: trialImage
+  },
+  {
+    id: 8,
+    type: 'relaxing',
+    location: 'Kanchanaburi',
+    resultType: 'Recommended',
+    latitude: 13.82,
+    longitude: 100.86,
+    title: 'River Hut',
+    subtitle: 'Calm Rivers',
+    description: 'Best floating hut in Kanchanaburi',
+    importantNotes: '10% off',
+    link: 'http://www.bangkok.com/',
+    image: trialImage
+  },
+  {
+    id: 9,
+    type: 'adventure',
+    location: 'Bangkok',
+    resultType: 'Recommended',
+    latitude: 13.11,
+    longitude: 100.17,
+    title: 'Building Climbing',
+    subtitle: 'Building Rocks',
+    description: 'Best rock climbing place in Bangkok',
+    importantNotes: '10% off',
+    link: 'http://www.bangkok.com/',
+    image: trialImage
+  }
+];
+
+export default RESULT_TYPES;

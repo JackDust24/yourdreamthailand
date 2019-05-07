@@ -1,0 +1,1237 @@
+
+/********************
+*        ALL        *
+********************/
+
+.App {
+  text-align: center;
+}
+
+.Home {
+  text-align: center;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 40vmin;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+.page {
+  margin: 20px;
+}
+
+.interactions {
+  text-align: center;
+}
+
+.table {
+  margin: 20px 0;
+}
+
+.table-header {
+  display: flex;
+  line-height: 24px;
+  font-size: 16px;
+  padding: 0 10px;
+  justify-content: space-between;
+}
+
+.table-empty {
+  margin: 200px;
+  text-align: center;
+  font-size: 16px;
+}
+
+.table-row {
+  display: flex;
+  line-height: 24px;
+  white-space: nowrap;
+  margin: 10px 0;
+  padding: 10px;
+  background: #ffffff;
+  border: 1px solid #e3e3e3;
+}
+
+.table-header > span {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  padding: 0 5px;
+}
+
+.table-row > span {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  padding: 0 5px;
+}
+
+#navbar {
+  background-color:#3661c5 !important;
+  font-size: 70% !important;
+}
+
+.pdf-view {
+  /* display: flex; */
+  /* object-fit: fill !important; */
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  display: flex;
+  height: 50;
+  padding: 0;
+  overflow: hidden; 
+  
+}
+
+#photo-thanks {
+  color: #ffffff; 
+  background-color: #160c0c83;
+}
+
+
+
+/********************
+*   HOME PAGE      *
+********************/
+
+.home-container {
+  position: relative;
+  text-align: center;
+  color: white;
+  font-style: bold;
+
+}
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.button-inline {
+  border-width: 0;
+  background: transparent;
+  color: inherit;
+  text-align: inherit;
+  -webkit-font-smoothing: inherit;
+  padding: 0;
+  font-size: inherit;
+  cursor: pointer;
+}
+
+.button-active {
+  border-radius: 0;
+  border-bottom: 1px solid #38BB6C;
+}
+
+/* .filter-area {
+  display:flex; 
+  flex-direction:row;
+} */
+
+.Select.is-open {
+  z-index: 10 !important;
+
+}
+
+.Select {
+  z-index: 10 !important;
+  /* text-align: center; */
+
+}
+
+/* .select {
+  text-align: center;
+
+} */
+
+.results {
+  z-index: -5;
+}
+
+/********************
+*   SEARCH PAGE     *
+********************/
+
+.holiday-body .filter-area {
+  background-color: #c5e1f5;
+}
+
+.holiday-body .holiday-header {
+  background-color: #c5e1f5;
+}
+
+.holiday-body .filter-area .filter-area-notes {
+  display: flex;
+  /* flex-direction: column; */
+  align-items: center !important;
+  justify-content: center !important;
+  /* position:relative; */
+
+}
+
+.holiday-body .filter-area .filter-area-notes .select-notes {
+  position: relative; 
+  margin: 20px 20px; 
+  width:100%; 
+  /* top:20%;  */
+  /* left:-35%; */
+  background-color: #c5e1f5;
+
+}
+
+strong {
+  color: #000000; 
+  font-weight: bolder !important;
+  font-family: 'RobotoCondensed' !important;
+  font-size: 120%;
+  /* font:  */
+}
+
+.holiday-body .filter-area .filter-area-options {
+  display: flex;
+  flex-direction: row;
+  align-items: center !important;
+  justify-content: center !important;
+  width:50%; 
+  position: relative; 
+  margin: 20px 20px; 
+  left: 25%;
+  right: 25%;
+
+  /* position:relative; */
+
+}
+
+.holiday-body .filter-area .filter-area-options .select {
+  position: relative; 
+  margin: 20px 20px; 
+  width:100%; 
+  top:20%;  
+  /* left:-35%; */
+
+}
+
+/* .holiday-body .filter-area .select-notes ul li strong {
+  font-weight: 900;
+
+} */
+
+.holiday-body #select-button {
+  display: flex;
+  align-items: center !important;
+  justify-content: center !important;
+  position: relative;
+  width:25%; 
+  height:200px; 
+
+}
+
+
+
+#select-button button {
+  height:60px; 
+  position: relative; 
+  margin: 20px 20px; 
+  width:100px; 
+  top:20%; 
+  /* left:-25%; */
+  border:1px double black;
+  border-radius: 10px;
+  background-color: #fa2323ef;
+  color: #e3e3e3;
+
+}
+
+
+.holiday-body .results {
+  text-align: left;
+}
+
+@media (max-width: 620px) {
+
+  .holiday-body .filter-area .filter-area-notes {
+    display: flex;
+    flex-direction: column;
+
+  }
+
+  .holiday-body .filter-area .filter-area-options {
+    display: flex;
+    flex-direction: column;
+
+  }
+
+  /* To stop the other select option covering it */
+  .holiday-body .filter-area .filter-area-options #select-location {
+    z-index: 15 !important;
+
+  }
+
+  #select-button button {
+    margin: 0; 
+    align-items: center !important;
+    justify-content: center !important;
+
+  }
+
+  .banner button {
+    display: none;
+  }
+  .banner {
+    font-size: 70%
+  }
+
+  #banner-accommodation {
+    background-position: center !important;
+    object-fit: cover;
+    background-image: url(..//assets/frankie-spontelli-beach.jpg);
+    background-repeat: no-repeat;
+    color: white;  
+    position: relative;
+    z-index: -2;
+    opacity: 0.7;
+    
+
+  }
+
+  .banner-accommodation-text h3 {
+    color: #0d0079 !important;
+  }
+
+
+  .banner-accommodation-text h1 {
+    color: #0d0079 !important;
+  }
+
+  .pdf-view {
+    display: flex;
+    /* object-fit: fill !important; */
+    align-items: left;
+    justify-content: left;
+    width:460px; 
+    position: relative; 
+    
+  }
+
+  p {
+    font-size: 80%;
+  }
+
+  strong {
+    font-size: 70%;
+
+  }
+
+  .AreaItem img {
+    width: 420px !important;
+  }
+
+  .informationItem img {
+    width: 420px !important;
+  }
+
+  .informationItem-info p {
+    color: #000000;
+    font-family: sans-serif;
+
+  }
+
+  .informationItem-info a {
+    width: 380px !important;
+    font-size: 80%;
+
+  }
+
+
+
+  /* h1 {
+    font-size: 70%;
+
+  }
+
+  h3 {
+    font-size: 70%;
+
+  } */
+
+}
+
+
+/* Banners   */
+
+#banner-home {
+    width: 100%;
+    height: 500px;
+    /* background-image: url(..//assets/mathew-schwartz-temple.jpg); */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;  
+    object-fit: contain;
+    /* opacity: 0.7; */
+    position: relative;
+
+}
+
+#banner-home::before{
+  background-image: url(..//assets/mathew-schwartz-temple.jpg);
+  background-position: bottom; 
+  background-repeat: no-repeat;
+  object-fit: contain;
+
+  color: white;  
+  background-size: 100%;
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -5;
+  opacity: 0.7;
+  -webkit-filter: blur(1px);
+  -moz-filter: blur(1px);
+  -o-filter: blur(1px);
+  -ms-filter: blur(1px);
+  filter: blur(1px);
+}
+
+
+.banner-home-text h1 {
+  padding-top: 40px;
+  /* color: #6ad6ef;  */
+  color: #4060be;  
+
+  font-size: 300% !important;
+  z-index: 1;
+  /* opacity: 1.0 !important; */
+  position: relative;
+  font-weight: bolder;
+
+}
+
+.banner-home-text p {
+  /* background: inherit;
+  background-clip: text; */
+  /* color: transparent; */
+  /* filter: invert(1); */
+  position: relative;
+  color: #0d0079;  
+  lighting-color: #e3e3e3;
+  font-weight: bolder;
+}
+
+
+
+/********************
+*   AREAS PAGE      *
+********************/
+
+.banner-areas {
+  width: 100%;
+  height: 360px;
+  background-size: cover;
+  background-position: center;
+  object-fit: fill;
+  position: relative;
+  /* -webkit-filter: brightness(0.5);
+  filter: brightness(0.8); */
+}
+
+.banner-areas::before{
+  /* content: ''; */
+  background-image: url(..//assets/bharath-mohan-temple.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  color: white;  
+  background-size: 100%;
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -2;
+  opacity: 0.7;
+
+  /* background: rgba(0,0,0,0.7); */
+}
+
+.banner-areas-text h1 {
+  padding-top: 40px;
+  /* color: #6ad6ef;  */
+  color: #4f3db3; 
+
+  font-size: 300%;
+  /* opacity: 1.0 !important; */
+  position: relative;
+
+  /* z-index: 10 !important; */
+
+
+}
+
+.banner-areas-text h3 {
+  padding-top: 40px;
+  /* color: #afeefc;  */
+  color: #4f3db3; 
+  font-weight: lighter;
+  font-size: 180%;
+  position: relative;
+  lighting-color: #e3e3e3;
+  /* filter: brightness(90%); */
+}
+
+.areas-area {
+  font-size: 160%;
+}
+
+.AreaItem #areaImageAttribute {
+  font-size: 60%;
+}
+
+.AreaItem img {
+  -webkit-background-style: cover;
+  -moz-background-style: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+/********************
+*   INFO PAGE     *
+********************/
+
+.banner-information {
+  width: 100%;
+  height: 360px;
+  background-size: cover;
+  background-position: center;
+  object-fit: fill;
+  position: relative;
+  /* -webkit-filter: brightness(0.5);
+  filter: brightness(0.8); */
+}
+
+.banner-information::before{
+  /* content: ''; */
+  background-image: url(..//assets/robby-buddha.jpg);
+  color: white;  
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -2;
+  opacity: 0.7;
+
+  /* background: rgba(0,0,0,0.7); */
+}
+
+.banner-information-text h1 {
+  padding-top: 40px;
+  color: #4f3db3; 
+  font-size: 300% !important;
+  /* opacity: 1.0 !important; */
+  position: relative;
+
+  /* z-index: 10 !important; */
+
+}
+
+.banner-information-text h3 {
+  padding-top: 40px;
+  color: #4f3db3; 
+  font-weight: lighter;
+  font-size: 180%;
+  position: relative;
+  lighting-color: #e3e3e3;
+  /* filter: brightness(90%); */
+}
+
+.information-area h3 {
+  font-size: 110%;
+  text-align: center;
+  padding-bottom: 20px;
+
+}
+
+.information-area h1 {
+  font-size: 180%;
+  text-align: center;
+}
+
+.informationItem {
+  /* width: 100%; */
+  background: #e3e3e3;
+  white-space: pre-wrap;
+  padding: 20px;
+
+}
+
+.informationItem img {
+  /* float: center; */
+  float: center;
+  padding: 20px;
+  align-items: right;
+  justify-content: right;
+  position: relative;
+
+}
+
+.informationItem .informationItem-info {
+  /* float: center; */
+  padding-left: 10px;
+
+}
+
+
+
+
+/********************
+*   FLIGHTS PAGE      *
+********************/
+
+.banner {
+  width: 100%;
+  height: 360px;
+  background-size: cover;
+  background-position: center;
+  object-fit: fill;
+  position: relative;
+  /* -webkit-filter: brightness(0.5);
+  filter: brightness(0.8); */
+}
+
+#banner-flights::before{
+  /* content: ''; */
+  background-image: url(..//assets/rafa-prada-33597-unsplash.jpg);
+  background-repeat: no-repeat;
+  object-fit: contain;
+  color: white;  
+  background-size: 100%;
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -2;
+  opacity: 0.7;
+
+  /* background: rgba(0,0,0,0.7); */
+}
+
+.banner-flights-text h1 {
+  padding-top: 40px;
+  color: #4f3db3; 
+  font-size: 300% !important;
+  /* opacity: 1.0 !important; */
+  position: relative;
+
+  /* z-index: 10 !important; */
+
+
+}
+
+.banner-flights-text h3 {
+  padding-top: 40px;
+  color: #4f3db3; 
+  font-weight: lighter;
+  font-size: 220%;
+  position: relative;
+  lighting-color: #e3e3e3;
+  /* filter: brightness(90%); */
+}
+
+.flights-area {
+  font-size: 140%;
+}
+
+.flights-area p strong {
+  font-size: 160%;
+  color: rgb(236, 8, 8);
+}
+
+
+/********************
+*  TRANSPORT PAGE   *
+********************/
+
+/* .banner-transport {
+  width: 100%;
+  height: 360px;
+  background-size: cover;
+  background-position: center;
+  object-fit: fill;
+  position: relative;
+
+} */
+
+#banner-transport::before{
+  /* content: ''; */
+  background-image: url(..//assets/lim-eng-train.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  object-fit: contain;
+  color: white;  
+  background-size: 100%;
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -2;
+  opacity: 0.7;
+
+  /* background: rgba(0,0,0,0.7); */
+}
+
+.banner-transport-text h1 {
+  padding-top: 40px;
+  color: #4f3db3; 
+  font-size: 300% !important;
+  /* opacity: 1.0 !important; */
+  position: relative;
+
+  /* z-index: 10 !important; */
+
+
+}
+
+.banner-transport-text h3 {
+  padding-top: 40px;
+  color: #4f3db3; 
+  font-weight: lighter;
+  font-size: 220%;
+  position: relative;
+  lighting-color: #e3e3e3;
+  /* filter: brightness(90%); */
+}
+
+.banner-transport-text #photo-thanks {
+  color: #ffffff; 
+  background-color: #160c0c83;
+}
+
+.transport-area {
+  font-size: 140%;
+}
+
+.transport-area p strong {
+  font-size: 160%;
+  color: rgb(236, 8, 8);
+}
+
+
+/********************
+* ACCOMODATION PAGE *
+********************/
+
+/* .banner-accommodation {
+  width: 100%;
+  height: 360px;
+  background-size: cover;
+  background-position: center;
+  object-fit: fill;
+  position: relative;
+
+} */
+
+#banner-accommodation::before{
+  /* content: ''; */
+  background-image: url(..//assets/frankie-spontelli-beach.jpg);
+  background-position: bottom;
+  background-repeat: no-repeat;
+  object-fit: none !important;
+  color: white;  
+  background-size: 100%;
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -2;
+  opacity: 0.7;
+
+  /* background: rgba(0,0,0,0.7); */
+}
+
+.banner-accommodation-text h1 {
+  padding-top: 40px;
+  color: #4f3db3; 
+  font-size: 300% !important;
+  /* opacity: 1.0 !important; */
+  position: relative;
+
+  /* z-index: 10 !important; */
+
+
+}
+
+.banner-accommodation-text h3 {
+  padding-top: 40px;
+  color: #4f3db3; 
+  font-weight: lighter;
+  font-size: 220%;
+  position: relative;
+  lighting-color: #e3e3e3;
+  /* filter: brightness(90%); */
+}
+
+.banner-accommodation-text #photo-thanks {
+  color: #ffffff; 
+  background-color: #160c0c83;
+}
+
+.accommodation-area {
+  font-size: 140%;
+}
+
+.accommodation-area p strong {
+  font-size: 160%;
+  color: rgb(236, 8, 8);
+}
+
+
+/********************
+*    TOURS PAGE     *
+********************/
+
+/* .banner-tours {
+  width: 100%;
+  height: 360px;
+  background-size: cover;
+  background-position: center;
+  object-fit: fill;
+  position: relative;
+
+} */
+
+#banner-tours::before{
+  /* content: ''; */
+  background-image: url(..//assets/robin-noguier-boat.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+
+  color: white;  
+  background-size: 100%;
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -2;
+  opacity: 0.7;
+
+  /* background: rgba(0,0,0,0.7); */
+}
+
+.banner-tours-text h1 {
+  padding-top: 40px;
+  color: #4f3db3; 
+  font-size: 300% !important;
+  /* opacity: 1.0 !important; */
+  position: relative;
+
+  /* z-index: 10 !important; */
+
+
+}
+
+.banner-tours-text h3 {
+  padding-top: 40px;
+  color: #4f3db3; 
+  font-weight: lighter;
+  font-size: 220%;
+  position: relative;
+  lighting-color: #e3e3e3;
+  /* filter: brightness(90%); */
+}
+
+.banner-tours-text #photo-thanks {
+  color: #ffffff; 
+  background-color: #160c0c83;
+}
+
+.tours-area {
+  font-size: 140%;
+}
+
+.tours-area p strong {
+  font-size: 160%;
+  color: rgb(236, 8, 8);
+}
+
+
+/********************
+* OFFERS PAGE *
+********************/
+
+/* .banner-offers {
+  width: 100%;
+  height: 360px;
+  background-size: cover;
+  background-position: center;
+  object-fit: fill;
+  position: relative;
+
+} */
+
+#banner-offers::before{
+  /* content: ''; */
+  background-image: url(..//assets/wang-xi-pool.jpg);
+  background-position: center; 
+  background-repeat: no-repeat;
+  color: white;  
+  background-size: 100%;
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -2;
+  opacity: 0.7;
+
+  /* background: rgba(0,0,0,0.7); */
+}
+
+
+
+.banner-offers-text h1 {
+  padding-top: 40px;
+  /* color: #6ad6ef;  */
+  font-size: 300% !important;
+  color: #4f3db3; 
+
+  /* opacity: 1.0 !important; */
+  position: relative;
+
+  /* z-index: 10 !important; */
+
+}
+
+.banner-offers-text h3 {
+  padding-top: 40px;
+  color: #4f3db3; 
+  font-weight: lighter;
+  font-size: 220%;
+  position: relative;
+  lighting-color: #e3e3e3;
+  /* filter: brightness(90%); */
+}
+
+.offers-area {
+  font-size: 160%;
+}
+
+.header-title {
+  z-index: 100;
+  margin-top: -500px;
+}
+
+.listings {
+  border-width: 1;
+  border-radius: 1;
+  background-color: #76a6fa;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 5px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+  overflow: hidden;
+  position: relative;
+  transition: all 0.5s ease 0s;
+  z-index: -1;
+}
+
+.listings_text {
+  height: 320px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.listings_link {
+  height: 60px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+
+.listings::before, .listings::after {
+  content: "";
+  height: 250%;
+  position: absolute;
+  transform: rotate(45deg);
+  width: 120%;
+  z-index: -9;
+  transition: all 0.5s;
+  opacity: 0;
+  background: #6fc5f7;    
+  
+}
+
+.listings::before{
+  top: -37px;
+  left: 100%;  
+  
+}
+
+.listings:hover:before{    
+  left: -27px;
+  opacity: 1;
+  
+}
+/* Left corner */
+.listings::after{
+  right: 100%;
+  bottom: -37px;
+ 
+}
+
+.listings:hover:after{
+  right: -27px;
+  opacity: 1;
+ 
+}
+
+.listings:hover{
+  color: white;    
+}
+
+.listings:h3{
+  color: white;    
+}
+
+
+.listings:hover h3{
+  color: white;    
+}
+
+
+.listings:hover h3:after{
+  background-color: white;    
+}
+
+/* .listings h3
+{
+ font-size: 25px;
+ font-weight: 700;
+ padding-bottom: 15px;
+ position: relative;
+ 
+} */
+
+.listings p
+{
+ font-size: 16px;
+ margin-bottom: 0;
+} 
+
+
+.carousel .slide img {
+  max-height: 600px;  /* change this to whatever you want */
+  width: auto;
+
+}
+
+.carousel .slide .legend {
+  font-size: 1.0em !important;
+  color: #ffffff !important;
+  /* bottom: 200px !important; */
+  bottom: 140px !important;
+  /* opacity: 0.55 !important; */
+
+}
+
+.carousel .slide .legend2 {
+  color: #f7f7f7 !important;
+  /* bottom: 200px !important; */
+  /* padding-bottom: 200px; */
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -ms-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  position: relative;
+  bottom: 80px;
+  /* left: 100%; */
+  /* margin-left: -55%; */
+  justify-content: center;
+  align-items: center;
+  width: 140px;
+  border-radius: 10px;
+  background: rgb(236, 8, 8);
+  color: #fff;
+  padding: 10px;
+  font-size: 24px;
+  text-align: center;
+  opacity: 0.85;
+  -webkit-transition: opacity 0.35s ease-in-out;
+  -moz-transition: opacity 0.35s ease-in-out;
+  -ms-transition: opacity 0.35s ease-in-out;
+  -o-transition: opacity 0.35s ease-in-out;
+  transition: opacity 0.35s ease-in-out;
+
+}
+
+
+/* .carousel .slide a {
+  font-size: 40px !important;
+  color: #6fc5f7;
+  bottom: 100px;
+  width: 60px;
+  opacity: 1;
+} */
+
+/* For the Contents */
+
+.Contents {
+  /* background-color: #aed7f4; */
+}
+
+.AreasThumbs {
+  background-color: #c5e1f5;
+
+}
+
+.contents {
+  border-width: 1;
+  border-radius: 1;
+  background-color: #76a6fa;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 5px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+  overflow: hidden;
+  position: relative;
+  transition: all 0.5s ease 0s;
+  z-index: 6;
+}
+
+.contents-text {
+  height: 320px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.contents-link {
+  height: 60px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+
+.contents::before, .contents::after {
+  content: "";
+  height: 250%;
+  position: absolute;
+  transform: rotate(45deg);
+  width: 120%;
+  z-index: -9;
+  transition: all 0.5s;
+  opacity: 0;
+  background: #6fc5f7;    
+  
+}
+
+.contents::before{
+  top: -37px;
+  left: 100%;  
+  
+}
+
+.contents:hover:before{    
+  left: -27px;
+  opacity: 1;
+  
+}
+/* Left corner */
+.contents::after{
+  right: 100%;
+  bottom: -37px;
+ 
+}
+
+.contents:hover:after{
+  right: -27px;
+  opacity: 1;
+ 
+}
+
+.contents:hover{
+  color: white;    
+}
+
+.contents:h3{
+  color: white;    
+}
+
+
+.contents:hover h3{
+  color: white;    
+}
+
+
+.contents:hover h3:after{
+  background-color: white;    
+}
+
+
+
+.carousel .thumb img {
+  width: 100% !important;
+  height: 100% !important;
+}
+
+/* .carousel .slide {
+  margin-left: 80px !important;
+  margin-right: 80px !important;
+
+} */
+
+
