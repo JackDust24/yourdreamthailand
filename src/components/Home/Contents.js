@@ -1,8 +1,11 @@
-import React, { Component } from 'react';
+import React from 'react';
 import CONTENTS from '../../data/contents';
 import '../App.css';
 import { fadeIn, bounce } from 'react-animations';
 import Radium, { StyleRoot } from 'radium';
+import { Link } from 'react-router-dom';
+import ScrollToTop from '../Shared/ScrollToTop';
+
 
  const styles = {
   fadeIn: {
@@ -16,13 +19,6 @@ import Radium, { StyleRoot } from 'radium';
 };
 
 const Contents = () => {
-//   <ul>
-//     {ACTIVITYRESULTS.map((item, key) => (
-//       <li key={key}>
-//         {item.subtitle}
-//       </li>
-//     ))}
-//   </ul>
 
     return (
         <StyleRoot>
@@ -31,8 +27,6 @@ const Contents = () => {
             <h2>Explore the site</h2>
             <div>
                 {CONTENTS.map((item, key) => (
-                // RESULT_TYPES.map(RESULT => (
-                // <ActivityResult key={ACTIVITYRESULT.id} activityResult={ACTIVITYRESULT} />
                 <div 
                 key={key} 
                 className="contents" 
@@ -45,7 +39,8 @@ const Contents = () => {
                         <p>{item.description}</p>
                     </div>
                     <div className="contents-link">
-                            <a href={item.link}>Read more ...</a>
+                            {/* <a href={item.link}>Read more ...</a> */}
+                            <Link to={`${item.link}`}>Read More ...</Link>
                     </div>
                 </div>
                 ))

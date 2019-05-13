@@ -1,17 +1,21 @@
 import React, { Component } from 'react';
-import ReactDOM from 'react-dom';
 import InformationList from './InformationList';
 import Footer from '../layout/Footer';
-
-import { Link } from 'react-router-dom';
-
+// import { Link } from 'react-router-dom';
 import '../App.css';
 
 class Information extends Component {
-    constructor(props) {
-        super(props);
+    // constructor(props) {
+    //     super(props);
     
-    }
+    // }
+    // SO that when the Link is called it goes straight to the top of the page
+
+      componentDidMount() {
+        console.log("component did mount");
+        window.scrollTo(0, 0);
+      }
+
 
     render() {
 

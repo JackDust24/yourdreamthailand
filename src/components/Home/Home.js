@@ -22,6 +22,11 @@ class Home extends Component {
     this.setState({ displayArea: !this.state.displayArea });
   }
 
+  componentDidMount() {
+    console.log("component did mount");
+    window.scrollTo(0, 0);
+  }
+
   render() {
 
     console.log('Home');

@@ -51,10 +51,9 @@ class Advert extends Component {
         // See what link to pass
 
         let linkToPass = passedAdvert.link;
-        {passedAdvert.pdfLink == true
-            ? linkToPass = '/PDFViewer'()
-            : linkToPass();
-        }
+        { if(passedAdvert.pdfLink == true) {
+            linkToPass = '/PDFViewer';
+         } }
 
         return (
 

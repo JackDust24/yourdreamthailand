@@ -1,12 +1,11 @@
 import React, { Component } from 'react';
-import ReactDOM from 'react-dom';
 import OfferList from './OfferList';
 import Footer from '../layout/Footer';
 import Popup from 'react-popup';
 import axios from 'axios';
 import '../Shared/Popup.css';
 import '../App.css';
-import { BASELINE_URL , BACK_URL } from '../../../src/index';
+import { BACK_URL } from '../../../src/index';
 
 // const PATH_BASE = 'http://localhost:5000';
 
@@ -24,30 +23,26 @@ class Offers extends Component {
         } 
     }
 
+    // componentDidUpdate() {
+    //     window.scrollTo(0, 0);
+    //   }
+
     componentDidMount() {
+    
+        // Scroll to the top if called from another place
+        window.scrollTo(0, 0);
+        // Load up the Offers
+        axios(`${BACK_URL}${PATH_SEARCH}`)
+        .then(result => 
+            this.setState({ contentResults: result.data}))
 
-    //    fetch(`http://localhost:5000/offers/`)
-
-    //   .then(response => {response.json().then(result => {
-    //     console.log("Offers Response: ")
-    //     console.log(result)
-
-    //     this.setState({
-    //         contentResults: result
-    //       });
-    //     })
-    //   })
-    axios(`${BACK_URL}${PATH_SEARCH}`)
-    .then(result => 
-        this.setState({ contentResults: result.data}))
-
-      .catch(error => alert(error.message));
-      console.log('Offeers request'); 
+        .catch(error => alert(error.message));
+        console.log('Offers request'); 
 
     }
 
     render() {
-        console.log('Offeers Render'); 
+        console.log('Offers Render'); 
 
         console.log(BACK_URL); 
 

@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import ReactDOM from 'react-dom';
 import AreasList from './AreasList';
 import Footer from '../layout/Footer';
 import '../App.css';
@@ -10,6 +9,11 @@ class Areas extends Component {
         super(props);
     
     }
+
+    componentDidMount() {
+        console.log("component did mount");
+        window.scrollTo(0, 0);
+      }
     
     render() {
 

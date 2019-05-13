@@ -19,21 +19,18 @@ class AreasList extends Component {
 
     // For making this more secure when we extract HTML tags from 
     const secureInitialState = serialize(AREAS);
-    // const insecureInitialState = JSON.stringify(response);
-    console.log(secureInitialState);
+
     // Parsing the JSON string to an actual object...
     const AREAITEMS = JSON.parse(secureInitialState);
 
     const Area = (props) => {
-
-
 
       const { location, anchor, title, image, description, link, info, imageInfo } = props.area;
 
         return (
           // The ref is the anchor
             <div className="AreaItem" style={{textAlign: 'center', alignSelf: 'stretch'}}>
-                  <a name={anchor}></a> 
+                  <a href={`#${anchor}`}></a> 
                   <h3>{location}</h3>
                   <h3>{title}</h3>
                   <img src={image} alt='profile' style={{ width: 500, height: 320 }} />

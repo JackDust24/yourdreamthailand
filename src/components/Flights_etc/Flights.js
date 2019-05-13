@@ -1,15 +1,18 @@
 import React, { Component } from 'react';
-import ReactDOM from 'react-dom';
 import Footer from '../layout/Footer';
 
 import '../App.css';
 
 class Flights extends Component {
 
-    constructor(props) {
-        super(props);
+    // constructor(props) {
+    //     super(props);
     
-    }
+    // }
+    componentDidMount() {
+        console.log("component did mount");
+        window.scrollTo(0, 0);
+      }
 
     render() {
 

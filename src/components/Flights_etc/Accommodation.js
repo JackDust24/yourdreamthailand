@@ -23,7 +23,11 @@ class Accommodation extends Component {
         super(props);
     
     }
-
+    
+    componentDidMount() {
+        console.log("component did mount");
+        window.scrollTo(0, 0);
+      }
 
     render() {
 

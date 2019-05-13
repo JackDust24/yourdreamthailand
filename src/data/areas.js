@@ -7,7 +7,6 @@ import western from '../assets/western-ploy.jpg';
 import southern from '../assets/southern.jpg';
 import northern from '../assets/northern.jpg';
 import isan from '../assets/isan.jpg';
-import islands from '../assets/islands.jpg';
 
 const AREAS = [
   {
@@ -105,7 +104,7 @@ const AREAS = [
     title: 'Ubon Ratchasima, Sisaket, Khon Kaen, Surin etc',
     description: 'Isan is an Authentic and beautiful area of fields and Thai life.',
     link: 'https://en.wikipedia.org/wiki/Isan',
-    info: 'North Eastern Thailand, known as Isan, borders Cambodia and Laos and though it contains a third of Thailand\'s population is is also the poorest region. Isan is filled with many towns, villages and farms. Some of the places to recommend are:<ul><li>Ubon Ratchathani - Ubon Ratchathani or Ubon as the locals like to call it, is probably the most well known place in Isan and houses mountains, national parks and villages.<a href="https://en.wikipedia.org/wiki/Ubon_Ratchathani_Province"> Read more...</a></li><li>Udon Thani -One of Isan\s most well known cities. <a href="https://en.wikipedia.org/wiki/Udon_Thani_Province"> Read more...</a></li><li>Khon Kaen - A place in central Isan with multi sub-districts.<a href="https://en.wikipedia.org/wiki/Khon_Kaen_Province"> Read more...</a></li></ul>',
+    info: 'North Eastern Thailand, known as Isan, borders Cambodia and Laos and though it contains a third of Thailand\'s population is is also the poorest region. Isan is filled with many towns, villages and farms. Some of the places to recommend are:<ul><li>Ubon Ratchathani - Ubon Ratchathani or Ubon as the locals like to call it, is probably the most well known place in Isan and houses mountains, national parks and villages.<a href="https://en.wikipedia.org/wiki/Ubon_Ratchathani_Province"> Read more...</a></li><li>Udon Thani -One of Isan\'s most well known cities. <a href="https://en.wikipedia.org/wiki/Udon_Thani_Province"> Read more...</a></li><li>Khon Kaen - A place in central Isan with multi sub-districts.<a href="https://en.wikipedia.org/wiki/Khon_Kaen_Province"> Read more...</a></li></ul>',
     imageInfo: 'Pha Lom Sak by Original uploader <a href="https://en.wikipedia.org/wiki/User:Billybobmac" class="extiw" title="en:User:Billybobmac">Billybobmac</a> at <a class="external text" href="http://en.wikipedia.org">en.wikipedia</a> - Transferred from <a class="external text" href="http://en.wikipedia.org">en.wikipedia</a>, Public Domain, <a href="https://commons.wikimedia.org/w/index.php?curid=3713236">Link</a>',
     image: isan
   }

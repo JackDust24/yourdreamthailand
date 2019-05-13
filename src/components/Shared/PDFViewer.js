@@ -14,10 +14,10 @@ class PDFViewer extends Component {
   }
  
   render() {
-    const { pageNumber, numPages } = this.state;
+    const { pageNumber } = this.state;
     console.log("TEST 999");
 
-    const pdf = this.props.link;
+    // const pdf = this.props.link;
 
     return (
       <div>

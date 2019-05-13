@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import ReactDOM, { Link } from 'react-dom';
+// import ReactDOM, { Link } from 'react-dom';
 import Footer from '../layout/Footer';
 
 import '../App.css';
@@ -12,16 +12,14 @@ const advertPloyTour = {
     info: "Join a local photographer and create the best holiday imaginable with your own magnificent photos from the most inspiring locations all over Bangkok.",
     link: "/assets/Bangkok-Photo-Tour.pdf",
     pdfLink: true,
-
 }
-
 
 class Tours extends Component {
 
-    constructor(props) {
-        super(props);
-    
-    }
+    componentDidMount() {
+        console.log("component did mount");
+        window.scrollTo(0, 0);
+      }
 
 
     render() {
