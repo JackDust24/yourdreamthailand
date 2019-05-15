@@ -58,13 +58,13 @@ function NavBar(props) {
               <Link to="/Accommodation" className="navBarCustom">Accommodation</Link>
             </Typography>
             <Typography variant="h6" color="inherit" className={classes.grow}>
-              <Link to="/Tours" className="navBarCustom">Tours / Activities</Link>
+              <Link to="/Tours" className="navBarCustom">Tours</Link>
             </Typography>
             <Typography variant="h6" color="inherit" className={classes.grow}>
               <Link to="/Transport" className="navBarCustom">Transport</Link>
             </Typography> 
             <Typography variant="h6" color="inherit" className={classes.grow}>
-              <Link to="/Areas" className="navBarCustom">Explore Thailand</Link>
+              <Link to="/Areas" className="navBarCustom">Places</Link>
             </Typography>
             <Typography variant="h6" color="inherit" className={classes.grow}>
               <Link to="/Offers" className="navBarCustom">Offers</Link>

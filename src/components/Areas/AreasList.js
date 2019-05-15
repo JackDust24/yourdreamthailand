@@ -33,7 +33,7 @@ class AreasList extends Component {
                   <a href={`#${anchor}`}></a> 
                   <h3>{location}</h3>
                   <h3>{title}</h3>
-                  <img src={image} alt='profile' style={{ width: 500, height: 320 }} />
+                  <img src={image} alt={title} style={{ width: 500, height: 320 }} />
                   <p dangerouslySetInnerHTML={removeXSSAttacks(imageInfo)} id='areaImageAttribute' />
                  <p>{description}</p>
                      {link != null
