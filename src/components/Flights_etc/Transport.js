@@ -38,8 +38,16 @@ class Transport extends Component {
                         <h1>Travelling in Thailand</h1>
                             <p>There are many ways to travel though Thailand</p>
                             <p>Here, you can choose your start and destination that suits you.</p>
-
-                            <p><strong>This page will be updated shortly</strong></p>
+                                <div className="12Go">
+                                    <script src="//cdn0.trainbusferry.com/tools/form/en/?id=3277226" 
+                                    data-one2go="3277226" data-color="blue" 
+                                    data-language="en" data-width="257" 
+                                    data-height="321" data-border="1"
+                                    data-radius="21" data-caption="Your Dream Thailand">
+                                    </script>
+                                    <div id="powered">Powered by <a href="https://12go.asia/?z=3277226">12Go Asia</a> system
+                                    </div>
+                                 </div>
                             <br />
                     </div>
                     <hr />

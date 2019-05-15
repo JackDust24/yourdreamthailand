@@ -91,7 +91,7 @@
 
 #navbar {
   background-color:#3661c5 !important;
-  font-size: 70% !important;
+  /* font-size: 70% !important; */
 }
 
 .navBarCustom {
@@ -102,11 +102,16 @@
   padding-right: 1rem;
   padding-bottom: 0.5rem;
   padding-left: 1rem;
+  /* font-size: 1.0em !important; */
+}
+
+#navbar h6 {
+  font-size: 1.0em !important;
 }
 
 .navBarCustom #navBarCustomHome {
   color: #fafafa !important;
-  font-size: 1.2em;
+  font-size: 1.0em !important;
   display: block;
   padding: .5rem 1rem;
   padding-top: 0.5rem;
@@ -122,6 +127,10 @@
 .navBarCustom:hover,  .navBarCustom:focus {
   color: rgba(69, 179, 27, 0.75) !important;
   text-decoration: none; 
+}
+
+.Typography h6 {
+  font-size: 0.7em;
 }
 
 .pdf-view {

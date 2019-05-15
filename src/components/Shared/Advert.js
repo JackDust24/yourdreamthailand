@@ -52,7 +52,7 @@ class Advert extends Component {
 
         let linkToPass = passedAdvert.link;
         { if(passedAdvert.pdfLink == true) {
-            linkToPass = '/PDFViewer';
+            linkToPass = '/#/PDFViewer';
          } }
 
         return (

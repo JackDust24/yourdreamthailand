@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import App from './components/App';
-import { Router, Switch, Route } from 'react-router-dom';
+import { Router, Switch, Route, HashRouter } from 'react-router-dom';
 import { createBrowserHistory } from 'history'
 import Home from './components/Home/Home';
 import Areas from './components/Areas/Areas';
@@ -25,7 +25,7 @@ const BASELINE_URL = PROD_URL;
 console.log('My Minimal React Webpack Babel Setup');
 // The render={() means we don't have to add the Header to each page
 ReactDOM.render(
-  <Router history={createBrowserHistory()}>
+  <HashRouter history={createBrowserHistory()}>
     <Switch>
     {/* <Route basename={BASELINE_URL} exact path='/' render={() => <NavBar><App /></NavBar>} />
       <Route basename={BASELINE_URL} path='/home' render={() => <NavBar><Home /></NavBar>} />
@@ -47,12 +47,12 @@ ReactDOM.render(
       <Route path='/tours' render={() => <NavBar><Tours /></NavBar>} />
       <Route path='/transport' render={() => <NavBar><Transport /></NavBar>} />
       <Route path='/areas' render={() => <NavBar><Areas /></NavBar>} />
-      <Route exact path='/offers' render={() => <NavBar><Offers /></NavBar>} />
-      <Route path='/information' render={() => <NavBar><Information /></NavBar>} />
+      <Route path='/offers' render={() => <NavBar><Offers /></NavBar>} />
+      <Route basename={BASELINE_URL} path='/information' render={() => <NavBar><Information /></NavBar>} />
       {/* <Route path='/news' render={() => <NavBar><News /></NavBar>} /> */}
       <Route path='/pdfviewer' render={() => <PDFViewer />} />
     </Switch>
-  </Router>,
+  </HashRouter>,
   document.getElementById('app')
 
 );
