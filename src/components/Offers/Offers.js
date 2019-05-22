@@ -31,6 +31,7 @@ class Offers extends Component {
     
         // Scroll to the top if called from another place
         window.scrollTo(0, 0);
+
         // Load up the Offers
         axios(`${BACK_URL}${PATH_SEARCH}`)
         .then(result => 
@@ -42,39 +43,35 @@ class Offers extends Component {
     }
 
     render() {
-        console.log('Offers Render'); 
-
-        console.log(BACK_URL); 
 
         return(  
             <div className="Offers">
-                    <div className="banner" id="banner-offers">
-                        <br />
-                        <br />
-                        <div className="banner-offers-text">
-                            <h1> Offers</h1>
-                            <h3>
-                            Scroll through and find some recommendations and offers
+                <div className="banner" id="banner-offers">
+                    <br />
+                    <br />
+                    <div className="banner-offers-text">
+                        <h1> Offers</h1>
+                        <h3>
+                        Scroll through and find some recommendations and offers
                         </h3>
                         <p id="photo-thanks">
                             Photo by <a href="https://unsplash.com/@kenwood123">Wang Xi</a> on <a href="https://unsplash.com/">Unsplash</a>
                         </p>
-                        </div>
                     </div>
-                    <div className="offers-area">
-                        <br />
-                        <br />
-                        <h1>Recommended Offers</h1>
-                            <p>Click on the links to find more.</p>
-                            <br />
-                            <OfferList contentResults={this.state.contentResults}/>
-                            <Popup />
-
-                    </div>
-                    <hr />
-                    <Footer />
-
                 </div>
+                <div className="offers-area">
+                    <br />
+                    <br />
+                    <h1>Recommended Offers</h1>
+                    <p>Click on the links to find more.</p>
+                    <br />
+                    <OfferList contentResults={this.state.contentResults}/>
+                    <Popup />
+                </div>
+                <hr />
+                <Footer />
+
+            </div>
         )
     }
 }

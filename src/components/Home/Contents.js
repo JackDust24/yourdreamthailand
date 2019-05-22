@@ -22,16 +22,14 @@ const Contents = () => {
 
     return (
         <StyleRoot>
-
-        <div>
-            <h2>Explore the site</h2>
             <div>
-                {CONTENTS.map((item, key) => (
-                <div 
-                key={key} 
-                className="contents" 
-                style={{ display: 'inline-block', width: 320, margin: 10, ...styles.bounce}}>
-
+                <h2>Explore the site</h2>
+                <div>
+                    {CONTENTS.map((item, key) => (
+                    <div 
+                    key={key} 
+                    className="contents" 
+                    style={{ display: 'inline-block', width: 320, margin: 10, ...styles.bounce}}>
                     <div className="contents-text">
                         <h3>{item.title}</h3>
                         <h4>{item.subtitle}</h4>
@@ -39,14 +37,13 @@ const Contents = () => {
                         <p>{item.description}</p>
                     </div>
                     <div className="contents-link">
-                            {/* <a href={item.link}>Read more ...</a> */}
                             <Link to={`${item.link}`}>Read More ...</Link>
                     </div>
+                    </div>
+                    ))
+                    }
                 </div>
-                ))
-                }
             </div>
-        </div>
         </StyleRoot>
 
     )

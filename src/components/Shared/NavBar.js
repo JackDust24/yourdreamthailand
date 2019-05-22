@@ -9,8 +9,6 @@ import { withStyles } from '@material-ui/core/styles';
 import { BASELINE_URL , BACK_URL } from '../../index'
 import logo from '../../assets/Logo.png';
 
-
-
 const styles = {
   root: {
       flexGrow: 1,
@@ -72,44 +70,10 @@ function NavBar(props) {
             <Typography variant="h6" color="inherit" className={classes.grow}>
               <Link to="/Information" className="navBarCustom">Information</Link>
             </Typography>
-            {/* <Typography variant="h6" color="default" className={classes.grow}>
-              <Link to="/Information" className="navBarCustom">Test 3</Link>
-            </Typography>
-            <Navbar.Brand href="/home">Home</Navbar.Brand> */}
-        {/* <Navbar.Toggle aria-controls="responsive-navbar-nav" />
-        <Navbar.Collapse id="responsive-navbar-nav" className="justify-content-end">
-          <Nav className="justify-content-end">
-          <Typography variant="h6" color="inherit" className={classes.grow}>
-              <Nav.Link href="/flights">Flights</Nav.Link>
-            </Typography>
-            <Typography variant="h6" color="inherit" className={classes.grow}>
-              <Nav.Link href="/accommodation">Accommodation</Nav.Link>
-            </Typography>
-            <Typography variant="h6" color="inherit" className={classes.grow}>
-              <Nav.Link href="/Tours">Tours / Activities</Nav.Link>
-            </Typography>
-            <Typography variant="h6" color="inherit" className={classes.grow}>
-              <Nav.Link href="/Transport">Transport</Nav.Link>
-            </Typography> 
-            <Typography variant="h6" color="inherit" className={classes.grow}>
-              <Nav.Link href="/Areas">Explore Thailand</Nav.Link>
-            </Typography>
-            <Typography variant="h6" color="inherit" className={classes.grow}>
-              <Nav.Link href="/Offers">Offers</Nav.Link>
-            </Typography>        
-            <Typography variant="h6" color="inherit" className={classes.grow}>
-              <Nav.Link href="/Information">Information</Nav.Link>
-            </Typography>
-            <Typography variant="h6" color="default" className={classes.grow}>
-              <Link to="/Information" className="navBarCustom">Test 3</Link>
-            </Typography> */}
-
           </Nav>
         </Navbar.Collapse>
 
       </Navbar>
-
-
       {props.children}
     </div>
 

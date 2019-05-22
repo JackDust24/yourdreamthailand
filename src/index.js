@@ -57,5 +57,3 @@ ReactDOM.render(
 
 );
 export { BASELINE_URL, BACK_URL };
-// Hot - reload - Speed things up
-// module.hot.accept();

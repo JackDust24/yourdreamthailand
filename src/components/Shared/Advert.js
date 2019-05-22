@@ -1,3 +1,8 @@
+/*
+This component is for displaying the Advert
+    We use this for displaying the advert or call the PDF Viewer
+*/
+
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import { withStyles } from '@material-ui/core/styles';
@@ -37,18 +42,13 @@ class Advert extends Component {
     constructor(props) {
         super(props);
 
-        console.log("TEST 222");
-
     }
 
     render() {
 
         const { classes } = this.props;
         const passedAdvert = this.props.advert;
-        console.log("TEST1 - " + passedAdvert.title);
-        // console.log("TEST2 - " + this.props.advert);
-        console.log("TEST 3- " + this.props);
-        // See what link to pass
+
 
         let linkToPass = passedAdvert.link;
         { if(passedAdvert.pdfLink == true) {
@@ -61,13 +61,11 @@ class Advert extends Component {
                 <ButtonBase
                 className={classes.cardAction}
                 onClick={()=> window.open(`${linkToPass}`, "_blank")}
-
                 // onClick={()=> window.open(`${passedAdvert.link}`, "_blank")}
                 >
                     <Typography gutterBottom variant="h5" component="h1" className={classes.text}>
                     {passedAdvert.title}
                     </Typography>
-                    {/* <CardActionArea> */}
                     <CardMedia
                         className={classes.media}
                         image={passedAdvert.image}
@@ -84,12 +82,6 @@ class Advert extends Component {
                         Learn more
                         </Typography>
                     </CardContent>
-                    {/* </CardActionArea> */}
-                    {/* <CardActions>
-                        <Button size="small" color="primary">
-                        Learn More
-                        </Button>
-                        </CardActions> */}
                 </ButtonBase>
             </Card>
         )

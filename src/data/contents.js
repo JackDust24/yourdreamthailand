@@ -5,8 +5,6 @@ import offers from '../assets/bundo-kim-501570-unsplash.jpg';
 import flights from '../assets/rafa-prada-33597-unsplash.jpg';
 import info from '../assets/bharath-mohan-temple.jpg';
 
-
-
 const CONTENTS = [
   {
     id: 1,

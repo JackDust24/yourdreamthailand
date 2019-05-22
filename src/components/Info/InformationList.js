@@ -14,14 +14,8 @@ const bkgColours = {
 
 let bkgColour = bkgColours.default;
 
-// So we have child elements to the Areas
 class InformationList extends Component {
 
-      // State - 1. Get the areas to pop up
-//   state = { defaultBackgroundColour: false };
-
-
-  // Toggle the state  
   toggleDefaultBackgroundColour = () => {
 
     if (bkgColour !== bkgColours.default) {
@@ -30,9 +24,6 @@ class InformationList extends Component {
         bkgColour = bkgColours.other
 
     }
-    console.log("LLLLL");
-
-    console.log(bkgColour);
 
 }
 
@@ -40,8 +31,6 @@ class InformationList extends Component {
 
     const Information = (props) => {
 
-        console.log("JJJJJ");
-        // We want to call this, to change colour for the background each time
         this.toggleDefaultBackgroundColour();
 
         const { anchor, title, image, description, links, info } = props.information;
@@ -59,27 +48,22 @@ class InformationList extends Component {
                   <img src={image} alt='profile' style={{ width: 500, height: 320}} />
                  </span>
                 <div>
-                {/* let newText = text.split ('\n').map ((item, i) => <p key={i}>{item}</p>); */}
-                <div className="informationItem-info" style={{textAlign: 'justify', alignSelf: 'justify'}}>
-                    <p>{info}</p>
-            
-                    
-                    {links.map(item =>
-                        <div key={uuidv4()}>
-                            <span>
-                                <p>{item.description}</p>
-                            </span>
-                            <span>
-                                <a href={item.URL}>{item.URL}</a>
-                            </span>
-                            <hr />
-                        </div>)
-                    }
-                 </div>
-
+                    <div className="informationItem-info" style={{textAlign: 'justify', alignSelf: 'justify'}}>
+                        <p>{info}</p>          
+                        {links.map(item =>
+                            <div key={uuidv4()}>
+                                <span>
+                                    <p>{item.description}</p>
+                                </span>
+                                <span>
+                                    <a href={item.URL}>{item.URL}</a>
+                                </span>
+                                <hr />
+                            </div>)
+                        }
+                    </div>
                 </div>
-                <hr />	
-                
+                <hr />	         
             </div>
         )
     }
@@ -93,7 +77,7 @@ class InformationList extends Component {
                 ))
             }
             </div>
-    </div>
+        </div>
     )
   }
 }

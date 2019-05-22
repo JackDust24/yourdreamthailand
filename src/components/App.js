@@ -26,11 +26,7 @@ import image15 from '../assets/robby-food.jpg';
 import image16 from '../assets/bharath-mohan-temple.jpg';
 import { BASELINE_URL , BACK_URL } from '../index'
 
-// import process.env.DEV_URL from '../../env';
-
 import './App.css';
-
-//import './App.css';
 
 class App extends Component {
 
@@ -49,9 +45,6 @@ class App extends Component {
   }
 
   render() {
-// Test env
-    console.log(BASELINE_URL) // Some Value
-
 
     const images = [
       image1,
@@ -83,8 +76,7 @@ class App extends Component {
      
     const Slideshow = () => {
         return (
-          <Zoom {...zoomOutProperties}>
-          
+          <Zoom {...zoomOutProperties}>     
             {
               images.map((each, index) => 
               <div className="home-container" key={index} style={{width: "100%", height: "500px"}}>
@@ -100,10 +92,8 @@ class App extends Component {
         )
     }
   
-
     return (
       <ParallaxProvider>
-
         <div className="App">
           <Parallax className="custom-class" y={[-10, 10]} tagOuter="figure">
               <Slideshow />
@@ -117,7 +107,6 @@ class App extends Component {
               Enter Site
             </Button>
           </div>
-          
           <hr />
           <div className="Contents">
             <Contents />
@@ -126,12 +115,8 @@ class App extends Component {
           <div className="AreasThumbs">
             <AreasThumbs />
           </div>
-  
           <hr />
-
           <Footer />
-
-
         </div>
       </ParallaxProvider>
 

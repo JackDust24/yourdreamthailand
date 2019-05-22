@@ -8,11 +8,6 @@ const SOCIAL_PROFILES = [
     link: 'mailto:jason_bournemouth@yahoo.co.uk',
     image: emailIcon
   },
-  // {
-  //   id: 2,
-  //   link: 'https://www.facebook.com/jason.whittaker.1656',
-  //   image: facebookIcon
-  // },
   {
     id: 2,
     link: 'https://twitter.com/JasonHawkman',

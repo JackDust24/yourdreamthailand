@@ -34,46 +34,43 @@ class Home extends Component {
       return (
       <div className="Home">
         <ParallaxProvider>
-        <Parallax className="custom-class" y={[-10, 10]} tagOuter="figure">
+          <Parallax className="custom-class" y={[-10, 10]} tagOuter="figure">
 
-          <div className="banner" id="banner-home">
-            <p />
-            <p />
-            <div className="banner-home-text">
-
-              <h1> Your Dream Thailand </h1>
-              <Title />
-              <p>
-              Here at Your Dream Thailand we will help you find the places you wish to go.
-              </p>
-              {
-                this.state.displayArea ? (
-                  <div>
-                    <p>You can find the destination for your trip/holiday.</p>
-                    <p>You can choose the type of trip tou wish, relaxing, adventure & luxury</p>
-                    <p>Find the best activities and places to go</p>
-                    <button onClick={this.toggleDisplayArea}>Show less</button>
-                  </div>
-                ) : (
-                  <div>
-                    <button onClick={this.toggleDisplayArea}>Read more</button>
-                  </div>
-                )
-              }
+            <div className="banner" id="banner-home">
               <p />
-            </div>
+              <p />
+              <div className="banner-home-text">
+                <h1> Your Dream Thailand </h1>
+                <Title />
+                <p>
+                Here at Your Dream Thailand we will help you find the places you wish to go.
+                </p>
+                {
+                  this.state.displayArea ? (
+                    <div>
+                      <p>You can find the destination for your trip/holiday.</p>
+                      <p>You can choose the type of trip tou wish, relaxing, adventure & luxury</p>
+                      <p>Find the best activities and places to go</p>
+                      <button onClick={this.toggleDisplayArea}>Show less</button>
+                    </div>
+                  ) : (
+                    <div>
+                      <button onClick={this.toggleDisplayArea}>Read more</button>
+                    </div>
+                  )
+                }
+                <p />
+              </div>
+             </div>
+          </Parallax>
+          <hr />
+          <div className="Activity">
+            <Activities />
           </div>
-        </Parallax>
-        <hr />
-        <div className="Activity">
-          <Activities />
-        </div>
         </ParallaxProvider> 
-
         <hr />
         <Footer />
       </div>
-
     )
   }
 }

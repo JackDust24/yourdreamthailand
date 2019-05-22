@@ -92,10 +92,7 @@ class Activities extends Component {
                 encodedTypeValue = 'all';
 
             }
-        
-    
-        // console.log("input field updated with "+e.target.value);
-        // console.log("input field updated with " + this.state.searchText);
+
         const searchedLocation = "all";
 
         // axios(`${PATH_BASE}${PATH_SEARCH}?${PARAM_SEARCH}${searchTerm}&${PARAM_PAGE}${page}&${PARAM_HPP}${DEFAULT_HPP}`)
@@ -104,69 +101,31 @@ class Activities extends Component {
         // fetch(`http://localhost:5000/activities/${ encodedLocationValue }/${ encodedTypeValue }`)
         axios(`${PATH_BASE}${PATH_SEARCH}/${ encodedLocationValue }/${ encodedTypeValue }`)
 
-    //   .then(response => {response.json().then(result => {
-    //     console.log("Response: ");
-    //     console.log(result);
-
-    //     this.setState({
-    //         contentResults: result
-    //       });
-    //     })
-    //   })
-
       .then(result => 
         this.setState({ contentResults: result.data}))
-
-
       .catch(error => alert(error.message));
-      console.log('Fetch Home - '); 
-
-      console.log(this.state.contentResults); 
-
-
     }
 
     handleLocationChange = (selectedLocation) => {
 
         optionSelected = true;
-
-        console.log("Location Option selected: " + selectedLocation.value);
-
         this.setState({ selectedLocation });
-
-        console.log('chosenLocation selected:' + selectedLocation.value);
-
-        // console.log('Location Option selected:' + this.state.selectedLocation.value);
     }
 
 
     handleTypeChange = (selectedType) => {
 
         optionSelected = true;
-
-       this.setState({ selectedType });
-        console.log('Type Option selected: ' + selectedType.value);
-
-        console.log('chosenType selected:' + selectedType.value);
+        this.setState({ selectedType });
     }
 
-    // shouldComponentUpdate (nextProps, nextState){
-    //     if (searchButtonPressed === true) {
-    //         console.log('searchButtonPressed TRUE');
-    //         searchButtonPressed = false;
-    //         return true;
-    //     } else {
-    //         console.log('searchButtonPressed FALSE');
-    //         return false;
-    //     }
-    // }
 
-componentDidUpdate() {
-    console.log('componentDidUpdate');
-    if (searchButtonPressed === true) {
-        searchButtonPressed = false;
+    componentDidUpdate() {
+        console.log('componentDidUpdate');
+        if (searchButtonPressed === true) {
+            searchButtonPressed = false;
+        }
     }
-}
 
     componentWillUnmount() {
         console.log('componentWillUnmount');
@@ -233,21 +192,12 @@ componentDidUpdate() {
                     </div>
 
                 </div>
-                {/* <div id="select-button" style={{ display: 'inline-block'}}>
-                            <button onClick={this.handleSubmitButton}
-                        type="button">Search</button>
-
-                </div> */}
                 <Button 
                     variant="contained" 
                     color="primary" 
                     onClick={this.handleSubmitButton} >
                     Search
                 </Button>
-        
-                {/* <div className="map_area">
-                    <ThailandMap />
-                </div> */}
                 <div className="results">
 
                     {searchButtonPressed == true
@@ -276,11 +226,7 @@ componentDidUpdate() {
 
                     }
                 </div>
-
-
             </div>
-
-
         )
     }
 }
